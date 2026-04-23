@@ -1,0 +1,9 @@
+# CODEOWNERS - axium-dev-br
+# Ref: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# Owners listados serao automaticamente solicitados em PRs que tocam os arquivos correspondentes.
+
+# Default: revisor obrigatorio para qualquer PR
+*           @rodrigogalhardo
+
+# Workflows e configuracoes de seguranca/CI exigem revisao do owner
+/.github/   @rodrigogalhardo
