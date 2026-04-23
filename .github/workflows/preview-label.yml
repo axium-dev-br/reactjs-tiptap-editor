@@ -4,6 +4,9 @@ on:
   pull_request_target:
     types: [labeled, unlabeled]
 
+permissions:
+  contents: read
+
 jobs:
   preview-pr:
     if: ${{ !github.event.pull_request.draft && contains(github.event.pull_request.labels.*.name, 'preview-pr') && !contains(github.event.pull_request.labels.*.name, 'spam') && !contains(github.event.pull_request.labels.*.name, 'invalid') }}
